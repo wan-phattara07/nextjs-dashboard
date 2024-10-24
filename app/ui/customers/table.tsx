@@ -12,12 +12,7 @@ export default async function CustomersTable({
   customers: FormattedCustomersTable[];
 }) {
   return (
-    <div className="w-full">
-      <h1 className={`${lusitana.className} mb-8 text-xl md:text-2xl`}>
-        Customers
-      </h1>
-      <Search placeholder="Search customers..." />
-      <div className="mt-6 flow-root">
+    <div className="mt-6 flow-root">
         <div className="overflow-x-auto">
           <div className="inline-block min-w-full align-middle">
             <div className="overflow-hidden rounded-md bg-gray-50 p-2 md:pt-0">
@@ -118,6 +113,5 @@ export default async function CustomersTable({
           </div>
         </div>
       </div>
-    </div>
   );
 }
